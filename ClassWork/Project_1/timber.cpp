@@ -113,6 +113,7 @@ int main()
      // setting font color
      messageText.setFillColor(Color::White);
      scoreText.setFillColor(Color::White);
+
      FloatRect textRect = messageText.getLocalBounds();
      messageText.setOrigin(textRect.left + textRect.width / 2.0f, textRect.top + textRect.height / 2.0f);
      messageText.setPosition(1920 / 2.0f, 1080 / 2.0f);
@@ -198,7 +199,6 @@ int main()
 
           if (Keyboard::isKeyPressed(Keyboard::Escape))
           {
-
                window.close();
           }
           if (Keyboard::isKeyPressed(Keyboard::Return))
@@ -473,7 +473,6 @@ void updateBranches(int seed)
      // move all branches to one place
      for (int j = NUM_BRANCHES - 1; j > 0; j--)
      {
-
           branchPositions[j] = branchPositions[j - 1];
      }
      // move new branches to position 0
